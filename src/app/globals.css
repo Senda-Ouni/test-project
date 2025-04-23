@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {   
+  font-family: "Poppins Bold"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-Bold.ttf'); 
+}
+.font-Bold {
+  font-family: 'Poppins Bold';
+}
+  
+ 
+@font-face {   
+  font-family: "Poppins BoldItalic"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-BoldItalic.ttf'); 
+}
+.font-Bold-Italic {
+  font-family: 'Poppins BoldItalic';
+}
+
+
+
+@font-face {   
+  font-family: "Poppins ExtraBold"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-ExtraBold.ttf'); 
+}
+.font-Extra-Bold {
+  font-family: 'Poppins ExtraBold';
+}
+
+@font-face {   
+  font-family: "Poppins ExtraBoldItalic"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-ExtraBoldItalic.ttf'); 
+}
+.font-Extra-Bold-Italic {
+  font-family: 'Poppins ExtraBoldItalic';
+}
+
+
+@font-face {   
+  font-family: "Poppins Light"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-Light.ttf'); 
+}
+
+.font-Light {
+  font-family: 'Poppins Light';
+}
+
+@font-face {   
+  font-family: "Poppins Medium"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-Medium.ttf'); 
+}
+
+.font-Medium {
+  font-family: 'Poppins Medium';
+}
+
+@font-face {   
+  font-family: "Poppins Regular"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-Regular.ttf'); 
+}
+
+.font-Regular {
+  font-family: 'Poppins Regular';
+}
+
+@font-face {   
+  font-family: "Poppins SemiBold"; 
+  font-display: swap;   
+  src: url('../../public/font/Poppins/Poppins-SemiBold.ttf'); 
+}
+
+.font-SemiBold {
+  font-family: 'Poppins SemiBold';
+}  
+
+.text-heder-change {
+   background-image: linear-gradient(93.17deg, #e879f9 28.64%, #c75ed05e 88.38%);
+  -webkit-background-clip: text;  /* Required for Safari */
+  background-clip: text;
+  color: transparent;
+}
