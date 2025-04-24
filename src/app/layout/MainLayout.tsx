@@ -23,11 +23,9 @@ useEffect(() => {
       setShowWebVersion(true);
     }
   }; 
-
-  // Add event listener for resize
+ 
   window.addEventListener("resize", handleResize);
-
-  // Cleanup event listener on component unmount
+ 
   return () => {
     window.removeEventListener("resize", handleResize);
   };
