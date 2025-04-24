@@ -36,9 +36,9 @@ useEffect(() => {
 
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#161616]">
-      {showWebVersion ? <Navbar /> : <SideBar />}
+    <div className="min-h-screen flex flex-col bg-[#161616] " id='home'>
       <main className="flex-grow">
+      {showWebVersion ? <Navbar /> : <SideBar />}
         {children}
       </main>
       <Footer />
