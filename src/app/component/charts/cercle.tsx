@@ -54,9 +54,9 @@ export function CercleChartComponant() {
 
 
   return (
-    <Card className="bg-[#1E1E1E] border-none rounded-none pt-2">
-      <CardHeader className="flex flex-col items-stretch space-y-0 border-b-2 border-b-[#4F4D4D] sm:flex-row ">
-        <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-2 min-h-[109px]">
+    <Card className="bg-[#1E1E1E] border-none rounded-none pt-2 mt-2 gap-2 md:gap-6">
+      <CardHeader className="flex flex-col items-stretch space-y-0 md:border-b-2 md:border-b-[#4F4D4D] sm:flex-row ">
+        <div className="flex flex-1 flex-col justify-center gap-1 md:px-6 md:py-2 md:min-h-[109px]">
           <CardTitle className="text-white text-[20px] font-Regular">Primary Text</CardTitle>
           <CardDescription >
 

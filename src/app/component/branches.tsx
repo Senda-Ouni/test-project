@@ -3,15 +3,15 @@
 import React from "react";
 import { BarChartComponant } from "./charts/bar-chart";
 import { CercleChartComponant } from "./charts/cercle";
-import { Accordion, AccordionActions, AccordionDetails, AccordionSummary, Button, Typography } from "@mui/material";
-import { ChevronDown, CircleChevronDown } from "lucide-react";
+import { Accordion, AccordionDetails, AccordionSummary, Button, Typography } from "@mui/material";
+import { ChevronDown } from "lucide-react";
 
 const Branches = () => {
 
 
   return (
 
-    <div className="w-full container p-10 mb-10 mt-5" id="branches">
+    <div className="w-full container p-5 md:p-10 mb-10 mt-5" id="branches">
       <div className=" ">
         <div className="flex gap-2 w-full border-b border-b-[#D9DEDD] items-center  pb-3">
           <img src="./assets/Dot.png" className="w-[8px] h-[8px]" alt="" />
@@ -20,12 +20,12 @@ const Branches = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 mt-5 ">
           <div className="col-span-4">
-            <div className="w-[80%]">
+            <div className="md:w-[80%]">
 
-              <h2 className="font-Medium text-[#7D4283] text-[62px] leading-[75px]">
+              <h2 className="font-Medium text-[#7D4283] text-[32px] md:text-[62px] leading-[40px] md:leading-[75px]">
                 We bear the responsibility of developing the sector.
               </h2>
-              <p className="text-[#646A69] text-[24px] font-Light mt-5 leading-[36px]">
+              <p className="text-[#646A69] text-[16px] md:text-[24px] font-Light mt-5 md:leading-[36px]">
                 Elevate your brand with our comprehensive marketing solutions,
                 including Digital Marketing, Content Creation, and Social Media Strategy.
                 Enhance visibility through expert SEO and PPC management,
@@ -33,28 +33,28 @@ const Branches = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-2">
-            <div className="grid content-between h-full">
+          <div className="col-span-2 md:mt-0 mt-4">
+            <div className="grid grid-cols-2 md:grid-cols-1 gap-4 content-between h-full">
               <div className="">
-                <h6 className="text-white text-[48px] font-SemiBold">1,200+</h6>
+                <h6 className="text-white text-[27px] md:text-[48px] font-SemiBold">1,200+</h6>
                 <p className="tex-[18px] font-Medium text-[#646A69]">
                   Clients
                 </p>
               </div>
               <div className="">
-                <h6 className="text-white text-[48px] font-SemiBold">20+</h6>
+                <h6 className="text-white text-[27px] md:text-[48px] font-SemiBold">20+</h6>
                 <p className="tex-[18px] font-Medium text-[#646A69]">
                   Branches
                 </p>
               </div>
               <div className="">
-                <h6 className="text-white text-[48px] font-SemiBold">200+</h6>
+                <h6 className="text-white text-[27px] md:text-[48px] font-SemiBold">200+</h6>
                 <p className="tex-[18px] font-Medium text-[#646A69]">
                   Number of Employees
                 </p>
               </div>
               <div className="">
-                <h6 className="text-white text-[48px] font-SemiBold">315+</h6>
+                <h6 className="text-white text-[27px] md:text-[48px] font-SemiBold">315+</h6>
                 <p className="tex-[18px] font-Medium text-[#646A69]">
                   Sales Representative
                 </p>
@@ -63,11 +63,11 @@ const Branches = () => {
 
           </div>
         </div>
-        <div className="mt-50">
-          <h3 className="text-white font-SemiBold text-[24px]">Our charts</h3>
+        <div className="md:mt-50 mt-10">
+          <h3 className="text-white font-SemiBold text-[24px] text-center md:text-left">Our charts</h3>
           <div className="grid grid-cols-1 md:grid-cols-6 mt-5 ">
             <div className="col-span-4">
-              <div className="w-[90%]">
+              <div className="md:w-[90%]">
                 <BarChartComponant />
 
               </div>
@@ -79,12 +79,12 @@ const Branches = () => {
           </div>
         </div>
 
-        <div className="mt-40">
-          <div className="flex gap-10 justify-between align-center items-center">
-            <h3 className="text-white font-SemiBold text-[44px]">News</h3>
-            <button className="text-white text-sm font-Light py-3 px-4   rounded-4xl bg-[#7951B3]">View all news</button>
+        <div className="md:mt-40 mt-20">
+          <div className="flex gap-10 justify-center md:justify-between align-center items-center">
+            <h3 className="text-white font-SemiBold text-[24px] md:text-[44px]">News</h3>
+            <button className="text-white text-sm font-Light py-3 px-4 hidden md:block  rounded-4xl bg-[#7951B3]">View all news</button>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 mt-30 gap-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-12 mt-5 md:mt-30 gap-10 ">
             <div className="col-span-7">
               <div className="w-full grid">
                 <div>
@@ -95,10 +95,10 @@ const Branches = () => {
                   <span className="text-[#1D1F1E] text-[14px] bg-white rounded-xl px-3 py-1 font-Light"> Contracts</span>
                 </div>
                 <div className="mt-4">
-                  <h6 className="text-white font-Regular text-[32px] leading-[40px]">
+                  <h6 className="text-white font-Regular text-[18px] md:text-[32px] leading-[40px]">
                     We specialize in fostering effective partnerships with supportive companies to drive mutual success.
                   </h6>
-                  <p className="text-[18px] text-[#646A69] font-Regular mt-5 leading-[26px]">
+                  <p className="md:text-[18px] text-[16px] text-[#646A69] font-Regular mt-5 leading-[26px]">
                     We are committed to building effective partnerships with supporting companies, contributing to
                     the advancement, development, and expansion of the sector through diverse capabilities, expertise, and technological innovation.
                   </p>
@@ -106,8 +106,8 @@ const Branches = () => {
 
               </div>
             </div>
-            <div className="col-span-5">
-              <div className="grid gap-5">
+            <div className="md:col-span-5 col-span-10">
+              <div className="grid gap-10">
                 <div className="flex gap-3">
                   <div className="w-[45%]">
                     <img src="./assets/news-2.png" className="w-full" alt="" />
@@ -115,7 +115,7 @@ const Branches = () => {
 
 
                   <div className="w-[55%] ">
-                    <h6 className="text-white text-[24px] font-Medium">We incorporate the formation of public partnerships as a core aspect of our operations. </h6>
+                    <h6 className="text-white text-[16px] md:text-[24px] font-Medium">We incorporate the formation of public partnerships as a core aspect of our operations. </h6>
                     <div className="flex gap-3 mt-7">
                       <span className="text-[#1D1F1E] text-[14px] bg-white rounded-xl px-3 py-1 font-Light"> Company</span>
                       <span className="text-[#1D1F1E] text-[14px] bg-white rounded-xl px-3 py-1 font-Light"> Contracts</span>
@@ -129,7 +129,7 @@ const Branches = () => {
                     <img src="./assets/news-3.png" className="w-full" alt="" />
                   </div>
                   <div className="w-[55%] ">
-                    <h6 className="text-white text-[24px] font-Medium lowercase">We incorporate the formation of public partnerships as a core aspect of our operations. </h6>
+                    <h6 className="text-white  text-[16px] md:text-[24px] font-Medium lowercase">We incorporate the formation of public partnerships as a core aspect of our operations. </h6>
                     <div className="flex gap-3 mt-7">
                       <span className="text-[#1D1F1E] text-[14px] bg-white rounded-xl px-3 py-1 font-Light"> Company</span>
                       <span className="text-[#1D1F1E] text-[14px] bg-white rounded-xl px-3 py-1 font-Light"> Contracts</span>
@@ -142,7 +142,7 @@ const Branches = () => {
                     <img src="./assets/news-4.png" alt="" />
                   </div>
                   <div className="w-[55%] ">
-                    <h6 className="text-white text-[24px] font-Medium lowercase">We incorporate the formation of public partnerships as a core aspect of our operations. </h6>
+                    <h6 className="text-white  text-[16px] md:text-[24px] font-Medium lowercase">We incorporate the formation of public partnerships as a core aspect of our operations. </h6>
                     <div className="flex gap-3 mt-7">
                       <span className="text-[#1D1F1E] text-[14px] bg-white rounded-xl px-3 py-1 font-Light"> Company</span>
                       <span className="text-[#1D1F1E] text-[14px] bg-white rounded-xl px-3 py-1 font-Light"> Contracts</span>
@@ -156,21 +156,23 @@ const Branches = () => {
 
             </div>
           </div>
+          <button className="text-white w-full text-sm font-Light mt-5 py-3 px-4 md:hidden block  rounded-4xl bg-[#7D4283]">Show all news</button>
+
         </div>
 
-        <div className="mt-40">
+        <div className="md:mt-40 mt-10">
 
-          <div className="grid grid-cols-1 md:grid-cols-12 mt-30 gap-15 ">
+          <div className="grid grid-cols-1 md:grid-cols-12 md:mt-30 gap-15 ">
             <div className="col-span-7">
-              <h3 className="text-white font-Bold text-[66.99px]">Simple pricing
+              <h3 className="text-white text-center md:text-left font-Bold text-[24px] md:text-[66.99px]">Simple pricing
                 for your Business</h3>
-              <p className="mt-6 text-[18.25px] fon-Light text-white opacity-[68%]">We have several powerful plans to showcase your business and get discovered
+              <p className="mt-6 text-center md:text-left text-[16px] md:text-[18.25px] fon-Light text-white opacity-[68%]">We have several powerful plans to showcase your business and get discovered
                 as a creative entrepreneurs. Everything you need.
 
               </p>
             </div>
-            <div className="col-span-5">
-              <div className="w-[90%] grid gap-3">
+            <div className="md:col-span-5 col-span-7">
+              <div className="md:w-[90%] grid gap-3">
 
                 <Accordion className="accordion-style ">
                   <AccordionSummary className="accordion-style-summary"

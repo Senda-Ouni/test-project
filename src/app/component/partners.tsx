@@ -25,11 +25,13 @@ const Partners = () => {
 
   return (
 
-    <div className="w-full p-10  container mt-15 mb-15">
+    <div className="w-full md:p-10  container md:mt-15 md:mb-15 mb-5">
       <h1 className="text-white font-Medium text-[48px]  text-center ">Our Partners</h1>
       <div className="mt-10">
         <Carousel
-          swipeable={false}
+            pauseOnHover
+            swipeable
+
           draggable={false}
           showDots={false}
           responsive={responsive}
@@ -49,7 +51,7 @@ const Partners = () => {
           <div className="carousel-card"><img src="./assets/BMW.png" alt=""  className="m-auto w-[52px]" /></div>
           <div className="carousel-card"><img src="./assets/HUAWEI.png" alt=""  className="m-auto w-[102px]" /></div>
           <div className="carousel-card"><img src="./assets/NASA.png" alt=""  className="m-auto w-[91px]" /></div>
-        </Carousel>;
+        </Carousel>
       </div>
     </div>
 

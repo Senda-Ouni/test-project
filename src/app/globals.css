@@ -260,7 +260,8 @@ body {
 .bg-about-us {
   background-image: url('../../public/assets/about-us.png'); 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: left;
 }
 
 .legend-style::marker { 
@@ -323,3 +324,45 @@ body {
   color: white;
 }
  
+.static-carousel {
+  position: static !important;
+}
+.static-carousel .react-multiple-carousel__arrow {
+  background: white;
+  color: black;
+  z-index: 1;
+  
+}
+.static-carousel .react-multiple-carousel__arrow:hover {
+  background: white;
+  color: black;
+  
+}
+
+.static-carousel .react-multiple-carousel__arrow:before {
+  color: black;  
+  font-size: 12px;
+}
+
+.items-dots-style .react-multi-carousel-dot  button{
+  background: white;
+  border: none;
+  width: 10.55px ;
+  height: 10.55px;  
+  vertical-align: text-bottom;
+ } 
+
+  .items-dots-style .react-multi-carousel-dot--active button {
+  border: 2px solid black !important;
+   background: black !important;
+   scale: 1.5;
+   
+}
+ 
+.bg-footer { 
+  background-image: url('../../public/assets/footer.png'); 
+  background-color: #7d4283;
+   background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: bottom;
+}

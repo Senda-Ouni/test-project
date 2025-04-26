@@ -43,7 +43,7 @@ export function BarChartComponant() {
     const customLegend = () => {
 
         return (
-            <ul className="list-disc pl-5 text-sm text-white flex gap-15 ml-10">
+            <ul className="list-disc pl-5 text-sm text-white flex flex-wrap gap-5 md:ml-10">
                 {legendItems.map((entry: any, index: number) => (
                     <li key={`item-${index}`} className="flex items-center gap-2">
                         <span
@@ -59,19 +59,19 @@ export function BarChartComponant() {
     return (
 
 
-        <Card className="bg-[#1E1E1E] border-none rounded-none pt-2">
-            <CardHeader className="flex flex-col items-stretch space-y-0 border-b-2 border-b-[#4F4D4D] sm:flex-row ">
-                <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-2  min-h-[109px] ">
+        <Card className="bg-[#1E1E1E] border-none rounded-none pt-2 mt-2 gap-2 md:gap-6">
+            <CardHeader className="flex flex-col items-stretch space-y-0 md:border-b-2 md:border-b-[#4F4D4D] sm:flex-row ">
+                <div className="flex flex-1 flex-col justify-center gap-1 md:px-6 md:py-2  md:min-h-[109px] ">
                     <CardTitle className="text-white text-[20px] font-Regular">Net Profit</CardTitle>
                     <CardDescription className="text-[#BDBDBD] text-[12px] font-Regular">
                          <p className="text-[#BDBDBD] mb-4 text-[12px] font-Regular">2024</p>
                     </CardDescription>
                 </div>
-                <div className="self-center mr-6">
+                <div className="self-center mr-6 hidden md:block">
                     <img src="./assets/alert-icon.png" className="w-[24px] h-[21.92px]" alt="" />
                 </div>
             </CardHeader>
-            <CardContent >
+            <CardContent className="md:px-6 px-0" >
 
 
                 <ResponsiveContainer width="100%" height={351.7}>

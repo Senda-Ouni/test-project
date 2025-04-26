@@ -1,6 +1,7 @@
  
  import AboutUs from "./component/about-us";
 import Branches from "./component/branches";
+import ClientsOpenions from "./component/clients-openions";
 import Header from "./component/header";
 import OurServices from "./component/our-services";
 import Partners from "./component/partners";
@@ -14,8 +15,9 @@ export default function Home() {
            <Header />
            <Partners />
            <AboutUs />
-           <OurServices />
+        <OurServices />
            <Branches />
+           <ClientsOpenions />  
        </div>
     </MainLayout>
   );
